@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> dark mode</title>
+<style>
+body {
+  background-color: white;
+  color: red;
+  font-size: 25px;
+}
+button{
+  background-color: lightgreen;
+  padding: 10px;
+  border:solid 1px lightgreen;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+  text-align:center;
+}
+button:hover{
+  background-color: transparent;
+  color:red;
+
+}
+</style>
+</head>
+<body>
+
+<h2> Dark  & Light Modes </h2>
+
+<button onclick="dark()">Click mode</button>
+
+<script>
+var b = document.body;
+function dark() {
+   b.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
